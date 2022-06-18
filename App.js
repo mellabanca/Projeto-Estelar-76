@@ -1,7 +1,10 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+//import { StackNavigator } from '@react-navigation/stack';
+//import { createStackNavigator } from '@react-navigation/stack';
+//import { createStackNavigation } from '@react-navigation/stack';
+//import { createStack } from '@react-navigation/stack';
 
 import HomeScreen from "./screens/Home";
 import StartMapScreen from "./screens/StarMap";
@@ -16,7 +19,10 @@ function App() {
       <Stack.Navigator initialRouteName="Home" screenOptions={{
         headerShown: false
       }}>
-        <Stack.Screen name="Home" component={HomeScreen} />
+        //<Stack.Screen component="Home" name={HomeScreen} />
+        //<Stack.Screen name="Home" component={HomeScreen} />
+        //<Stack.Screen name="Home" component="HomeScreen" />
+        //<Stack.Screen name:"Home" component:{HomeScreen} />
         <Stack.Screen name="StarMap" component={StartMapScreen} />
         <Stack.Screen name="DailyPic" component={DailyPicScreen} />
         <Stack.Screen name="SpaceCraft" component={SpaceCraftScreen} />
